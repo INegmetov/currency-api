@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'ru.ds.education.currency-cbr-adapter' is invalid and this project uses 'ru.ds.education.currencycbradapter' instead.
+* The original package name 'ru.ds.education.currency-cbr-adapter' is invalid and this project uses 'ru.ds.education.currencyapi' instead.
 
 # Getting Started
 

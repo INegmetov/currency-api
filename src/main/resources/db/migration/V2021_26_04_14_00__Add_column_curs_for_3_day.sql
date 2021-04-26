@@ -1,0 +1,1 @@
+ALTER TABLE curs_data ADD COLUMN curs_for_3_day int;
