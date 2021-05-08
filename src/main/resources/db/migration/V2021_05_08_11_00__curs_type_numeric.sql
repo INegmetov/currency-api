@@ -1,0 +1,1 @@
+ALTER TABLE curs_data ALTER COLUMN curs TYPE numeric(5,2) ;

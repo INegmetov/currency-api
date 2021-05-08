@@ -1,5 +1,9 @@
 package ru.ds.education.currencyapi.db.entity;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -16,18 +20,18 @@ import java.time.LocalDate;
 public class CursDataEntity {
 
     @Id
-    @Column
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column
+    @Column(name = "currency")
     @Enumerated(EnumType.STRING)
     private CursEnum currency;
 
-    @Column
+    @Column(name = "curs")
     private int curs;
 
-    @Column
+    @Column(name = "curs_date")
     private LocalDate cursDate;
 
 }
